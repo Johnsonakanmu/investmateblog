@@ -1,0 +1,21 @@
+﻿@font-face {
+  font-family: 'Bona Nova';
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url(s/bonanova/v10/B50LF7ZCpX7fcHfvIUB5iaJu.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Bona Nova';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(s/bonanova/v10/B50NF7ZCpX7fcHfvIUBJiw.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Bona Nova';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(s/bonanova/v10/B50IF7ZCpX7fcHfvIUBxN4dOFA.ttf) format('truetype');
+}

@@ -1,0 +1,7 @@
+﻿@font-face {
+  font-family: 'Bebas Neue';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(s/bebasneue/v14/JTUSjIg69CK48gW7PXooxW4.ttf) format('truetype');
+}

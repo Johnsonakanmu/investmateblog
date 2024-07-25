@@ -9,13 +9,9 @@
 
       <nav id="navbar" class="navbar">
         <ul>
-          <!-- <li><a href="index.php" style="color: white;font-weight: 500; letter-spacing: -0.5px;">Blog</a></li> -->
-          <!-- <li><a href="single-post.php" style="color: white;font-weight: 500; letter-spacing: -0.5px;">Single Post</a></li> -->
           <li><a href="search-result.php" style="color: white; font-weight: 500;
                     letter-spacing: -0.5px;">Blog Categories</a></li>
 
-          <li><a href="#" style="color: white;font-weight: 500; letter-spacing: -0.5px;">About</a></li>
-          <li><a href="#" style="color: white;font-weight: 500; letter-spacing: -0.5px;">Contact</a></li>
 
         </ul>
       </nav><!-- .navbar -->

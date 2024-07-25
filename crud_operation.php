@@ -145,6 +145,33 @@ function listPostsByCaption($caption) {
     return $posts;
 }
 
+function listPostsByCaptionWithLimit($caption, $limit) {
+    global $conn;
+
+    // SQL query to fetch posts by caption
+    $sql = "
+    SELECT posts.*
+    FROM posts 
+    WHERE posts.caption LIKE ? 
+    ORDER BY created_at DESC 
+    LIMIT ?
+";
+
+    // Prepare the SQL statement
+    $stmt = $conn->prepare($sql);
+
+    // Bind the parameter with wildcards for partial matching
+    $searchTerm = "%$caption%";
+    $stmt->bind_param('ss', $searchTerm,$limit);
+
+    $stmt->execute();
+    $result = $stmt->get_result();
+    $posts = $result->fetch_all(MYSQLI_ASSOC);
+    $stmt->close();
+
+    return $posts;
+}
+
 
 function getPostById($post_id) {
     global $conn;

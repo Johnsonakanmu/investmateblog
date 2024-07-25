@@ -1,10 +1,7 @@
-
-
-
-
-
-
-  <footer class="echo-footer-area footer-2" id="footer">
+<?php
+$popularItems = listPostsByCaptionWithLimit('Popular',10);
+?>
+<footer class="echo-footer-area footer-2" id="footer">
         <div class="container" >
             <div class="echo-row">
                 <div class="echo-footer-content-1" >
@@ -41,16 +38,11 @@
                     </div>
                     <div class="echo-footer-most-popular">
                         <ul class="list-unstyled">
-                            <li><a href="#">Business</a></li>
-                            <li><a href="#">Word</a></li>
-                            <li><a href="#">Politics</a></li>
-                            <li><a href="#">Tech</a></li>
-                            <li><a href="#">Video</a></li>
-                            <li><a href="#">Life Style</a></li>
-                            <li><a href="#">Fashion</a></li>
-                            <li><a href="#">Travels</a></li>
-                            <li><a href="#">Sports</a></li>
-                            <li><a href="#">Game</a></li>
+                            <?php if (!empty($popularItems)): ?>
+                                <?php foreach ($popularItems as $item): ?>
+                                    <li><a href="#"><?php echo htmlspecialchars($item['category']); ?></a></li>
+                                <?php endforeach; ?>
+                            <?php endif; ?>
                         </ul>
                     </div>
                 </div>
@@ -60,11 +52,12 @@
                     </div>
                     <div class="echo-footer-help" style="margin-left: 10px">
                         <ul class="list-unstyled">
-                            <li><a href="#">Advanced Risk Management</a></li>
-                            <li><a href="#">Cryptocurrency Market Evaluation</a></li>
-                            <li><a href="#">Investment Management</a></li>
-                            <li><a href="#">Privacy Policy</a></li>
-                            <li><a href="#">Terms and Conditions</a></li>
+                            <li><a href="https://investmate.pro/advanced-risk-management/">Advanced Risk Management</a></li>
+                            <li><a href="https://investmate.pro/cryptocurrency-market-evaluation/">Cryptocurrency Market Evaluation</a></li>
+                            <li><a href="https://investmate.pro/managing-investments/">Investment Management</a></li>
+                            <li><a href="https://investmate.pro/advanced-risk-management/">Advance Risk</a></li>
+                            <li><a href="https://investmate.pro/privacy-policy/">Privacy Policy</a></li>
+                            <li><a href="https://investmate.pro/terms-and-conditions/">Terms and Conditions</a></li>
                             
                         </ul>
                     </div>
